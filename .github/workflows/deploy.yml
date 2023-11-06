@@ -31,7 +31,7 @@ jobs:
       - name: Build step
         # 📝 Update the build command(s) if necessary
         run: |
-          yarn sync
+          yarn check
           yarn install
           yarn build
 
