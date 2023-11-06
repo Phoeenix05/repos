@@ -4,6 +4,9 @@ import { SvelteKitAuth } from "@auth/sveltekit"
 
 export const handle = SvelteKitAuth({
     providers: [
-        GitHub({ clientId: GITHUB_ID, clientSecret: GITHUB_SECRET })
+        GitHub({ 
+            clientId: AUTHJS_GITHUB_ID, 
+            clientSecret: AUTHJS_GITHUB_SECRET 
+        }),
     ],
 })
