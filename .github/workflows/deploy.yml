@@ -29,7 +29,11 @@ jobs:
           node-version: lts/*
 
       - name: Build step
-        run: "yarn install && yarn build" # 📝 Update the build command(s) if necessary
+        # 📝 Update the build command(s) if necessary
+        run: |
+          yarn sync
+          yarn install
+          yarn build
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
