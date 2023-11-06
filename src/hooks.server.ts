@@ -1,4 +1,4 @@
-import { GITHUB_ID, GITHUB_SECRET } from "$env/static/private"
+import { AUTHJS_GITHUB_ID, AUTHJS_GITHUB_SECRET } from "$env/static/private"
 import GitHub from "@auth/core/providers/github"
 import { SvelteKitAuth } from "@auth/sveltekit"
 
