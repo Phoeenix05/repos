@@ -31,8 +31,8 @@ jobs:
       - name: Build step
         # 📝 Update the build command(s) if necessary
         run: |
-          yarn check
           yarn install
+          yarn check
           yarn build
 
       - name: Upload to Deno Deploy
